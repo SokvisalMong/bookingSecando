@@ -55,7 +55,9 @@ This compiles all the css we need and gets rid of the extra css that we won't us
 ## Resources
 
 [Inspiration](https://www.opentable.com/)
+
 [Google Drive](https://drive.google.com/drive/folders/1CbFcbP1Hz0zvRlunYu30wi7OE9awHrBU?usp=sharing)
+
 [Github Repository](https://github.com/SokvisalMong/bookingSecando)
 
 ## Roles
