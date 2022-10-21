@@ -1,3 +1,31 @@
+## Initialization
+
+To run the Sail application in detached mode:
+```
+./vendor/bin/sail up -d
+```
+
+Create a link between public and storage:
+```
+./vendor/bin/sail artisan storage:link
+```
+
+Install npm dependencies:
+```
+./vendor/bin/sail npm ci
+```
+
+Run for development:
+```
+./vendor/bin/sail npm run dev
+```
+
+Compile for deployment:
+```
+./vendor/bin/sail npm run build
+```
+This compiles all the css we need and gets rid of the extra css that we won't use.
+
 ## Technology
 
 ### Frontend Framework
