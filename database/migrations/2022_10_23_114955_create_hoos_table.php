@@ -14,7 +14,17 @@ return new class extends Migration
     public function up()
     {
         Schema::create('hoos', function (Blueprint $table) {
+            // Primary Key
             $table->id();
+
+            // Foreign Key
+            $table->foreignId('restaurant_id')->constrained()->ondelete('cascade');
+
+            // Required
+            $table->set('day', ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']);
+            $table->time('open_time');
+            $table->time('close_time');
+
             $table->timestamps();
         });
     }
