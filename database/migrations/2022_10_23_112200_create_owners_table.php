@@ -15,6 +15,16 @@ return new class extends Migration
     {
         Schema::create('owners', function (Blueprint $table) {
             $table->id();
+
+            $table->string('name');
+            $table->string('email')->unique();
+            $table->string('password');
+            $table->string('mobile');
+            $table->string('firstname');
+            $table->string('lastname');
+
+            $table->timestamp('email_verified_at')->nullable();
+            $table->rememberToken();
             $table->timestamps();
         });
     }
