@@ -21,6 +21,9 @@ class Owner extends Authenticatable
         'name',
         'email',
         'password',
+        'mobile',
+        'firstname',
+        'lastname',
     ];
 
     /**
