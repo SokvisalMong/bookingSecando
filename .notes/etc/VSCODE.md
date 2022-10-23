@@ -14,7 +14,7 @@ Switch between Terminal and IDE: <kbd>Ctrl + `</kbd>
 
 Show Problems Panel: <kbd>Ctrl + Shift + M</kbd>
 
-Switch Files: <kbd>Ctrl + Tab</kbd>
+Switch Files: <kbd>Ctrl + Tab</kbd
 
 ### Navigation
 
