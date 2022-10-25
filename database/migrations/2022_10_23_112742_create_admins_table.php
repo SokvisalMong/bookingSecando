@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('admins', function (Blueprint $table) {
             $table->id();
 
             $table->string('name');
@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('mobile');
             $table->string('firstname');
             $table->string('lastname');
+            $table->tinyInteger('permission'); // Permission levels can be: 1, 2, or 3
             
             $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();
@@ -36,6 +37,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('admins');
     }
 };
